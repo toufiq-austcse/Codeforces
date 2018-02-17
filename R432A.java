@@ -1,0 +1,79 @@
+package CodeForces;
+
+/*In the name of Allah the Most Merciful.
+ * Author
+ * Md. Toufiqul Islam
+ * Dept. Of CSE
+ * Ahsanullah University Of Science And Technology
+*/
+
+import java.io.*;
+import java.util.*;
+public class R432A {
+
+
+          //Code for Faster Input
+    	  public static class MyScanner {
+
+    	      BufferedReader br;
+    	      StringTokenizer st;
+
+    	      public MyScanner() {
+    	         br = new BufferedReader(new InputStreamReader(System.in));
+    	      }
+
+    	      String next() {
+    	          while (st == null || !st.hasMoreElements()) {
+    	              try {
+    	                  st = new StringTokenizer(br.readLine());
+    	              } catch (IOException e) {
+    	                  e.printStackTrace();
+    	              }
+    	          }
+    	          return st.nextToken();
+    	      }
+
+    	      int nextInt() {
+    	          return Integer.parseInt(next());
+    	      }
+
+    	      long nextLong() {
+    	          return Long.parseLong(next());
+    	      }
+
+    	      double nextDouble() {
+    	          return Double.parseDouble(next());
+    	      }
+
+    	      String nextLine(){
+    	          String str = "";
+    		  try {
+    		     str = br.readLine();
+    		  } catch (IOException e) {
+    		     e.printStackTrace();
+    		  }
+    		  return str;
+    	      }
+
+    	   }
+    	   //--------------------------------------------------------
+           public static void main(String[] args) {
+               MyScanner sc = new MyScanner();
+               long n = sc.nextLong();
+               long k = sc.nextLong();
+               long t = sc.nextLong();
+
+               if(t<=k){
+                   System.out.println(t);
+               }
+               else if(t>n){
+                   long temp = t-k;
+                   long a = n;
+                   System.out.println(n-temp);
+               }
+               else if(t>k){
+                   long temp = t-k;
+                   System.out.println(t-temp);
+               }
+           }
+}

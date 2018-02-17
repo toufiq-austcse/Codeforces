@@ -1,0 +1,36 @@
+5 R443A
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+14 3
+2 2
+1 2
+2 2
+
+0 
+1
+1
+11 2
+10 1
+6 5
+
+0 
+1
+14 src/CodeForces
+16 -Xmx256m -Xss64m
+4 Main
+16 CodeForces.R443A
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2017.10.30
+0 
+1
+23 InputOutput.InputReader
+24 InputOutput.OutputWriter
+0
+0
